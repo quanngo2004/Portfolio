@@ -1,0 +1,205 @@
+/* ===== Reset & base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0d021c, #05142a);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+a { color: #9b5de5; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #9b5de5;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #9b5de5;
+}
+
+/* ===== Hero ===== */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+  background: radial-gradient(circle at top left, #3a0ca3, #00081f);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #9b5de5;
+}
+
+.hero h2 {
+  font-weight: 400;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #aaa;
+}
+
+.btn {
+  background: linear-gradient(90deg, #9b5de5, #4361ee);
+  padding: 12px 26px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(155, 93, 229, 0.6);
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #9b5de5;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* ===== Cards ===== */
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 24px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card p, .card span, .card a {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* ===== Skills ===== */
+.skills-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  color: #ccc;
+}
+
+.skills-list li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* ===== Contact ===== */
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* ===== About with photo ===== */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 550px;
+  text-align: left;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.about-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #9b5de5;
+  box-shadow: 0 0 25px rgba(155, 93, 229, 0.25);
+  transition: all 0.4s ease;
+}
+
+.about-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(155, 93, 229, 0.45);
+}
+
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #999;
+  font-size: 0.9rem;
+}
